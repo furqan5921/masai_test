@@ -7,12 +7,12 @@ const RightBox = ({
   handleTip,
   handlePeople,
 }) => {
-  const [billTotal, setBillTotal] = useState(total);
+
   const handleClick = () => {
     handleBill(0);
     handlePeople(1);
     handleTip(0);
-    setBillTotal(0);
+ 
   };
   return (
     <div style={{ flex: 1, padding: "10px" }}>
@@ -34,7 +34,7 @@ const RightBox = ({
         </div>
         <div style={{ display: "flex", gap: "5px" }}>
           <h5>Total/person</h5>
-          <h1 className="TotalAmount">{billTotal}</h1>
+          <h1 className="TotalAmount">{total}</h1>
         </div>
         <button className="Reset" onClick={handleClick}>
           Reset
