@@ -5,7 +5,7 @@ const LeftBox = ({ handleTip, handleBill, bill, people, handlePeople }) => {
       style={{ display: "flex", flexDirection: "column", gap: "10px", flex: 1 }}
     >
       {/* Add input for bill */}
-      <div>
+      <div style={{ width: "100%" }}>
         <h5>Bill</h5>
         <input
           className="bill_input"
@@ -17,7 +17,7 @@ const LeftBox = ({ handleTip, handleBill, bill, people, handlePeople }) => {
         style={{
           display: "grid",
           gridTemplateColumns: "repeat(3,1fr)",
-          gap: "10px",
+          gap: "5px",
         }}
       >
         <button
