@@ -30,7 +30,7 @@ const BillPage = () => {
   };
   const calculateTipPerPerson = totalTipPerPerson(people, tip, bill);
   const calTotalperPersons = calculatetotalPerPerson(tip, people, bill);
-  console.log("this is cal", calTotalperPersons);
+  
   return (
     <div className="billbox" style={{ display: "flex", padding: "50px" }}>
       {/* Add LeftBox and RightBox component here */}
